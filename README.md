@@ -2,11 +2,6 @@
 
 A production-quality Retrieval-Augmented Generation pipeline built with Python, LangGraph, and ChromaDB. Every concept is modularised into its own file so you can read and understand each piece in isolation.
 
-You can use it two ways:
-
-- **Streamlit web UI** — ask questions in the browser, rebuild the index with one click, and inspect the retrieved chunks and hybrid-search trace. See [Streamlit UI](#streamlit-ui).
-- **Command-line demo scripts** — step through the chunking comparison manually. See [Demo — Character vs Semantic Chunking](#demo--character-vs-semantic-chunking).
-
 ---
 
 ## What This Project Teaches
@@ -51,86 +46,9 @@ After adding or changing documents, rebuild the index (sidebar button in the UI,
 
 ---
 
-## Streamlit UI
-
-The web UI wraps the same LangGraph pipeline the CLI scripts use. It is the quickest way to try the assistant.
-
-### Run locally
-
-```bash
-streamlit run streamlit_app.py
-```
-
-Streamlit prints a local URL (usually `http://localhost:8501`) and opens it in your browser.
-
-### First-time use
-
-1. **Check the API key.** The sidebar shows `API key loaded from .env` when it finds `OPENAI_API_KEY`. If it shows `No OPENAI_API_KEY found`, paste your key into the sidebar password field. That key is held in memory for the session only and is never written to disk.
-2. **Build the index.** On a fresh checkout the sidebar shows `No index found`. Click **Rebuild index from docs/**. This chunks every `.md` file in `docs/` with structure-based (semantic) chunking, embeds the chunks, and stores them in `chroma_data/`. The sidebar then shows the indexed chunk count.
-3. **Ask a question.** Type into **Your question** and press **Ask**, or click one of the example questions under **Try asking** in the sidebar.
-
-### What you get back
-
-For every question the page shows:
-
-- **Answer** — the grounded response from `gpt-4o-mini`.
-- **Citations** — the `[Source: file, Section: name]` references extracted from the answer.
-- **Retrieved chunks** (expander) — the top-K chunks after Reciprocal Rank Fusion, with rank, document, section title, RRF score, and full text.
-- **Hybrid search trace** (expander) — the BM25, vector, and RRF ranking output the retriever prints, so you can see exactly why each chunk was chosen.
-
-Ask an out-of-scope question such as *"What is the rate limit on the Stripe API?"* and the assistant should reply that it could not find an answer in the documentation rather than inventing one.
-
-### Rebuilding the index
-
-Click **Rebuild index from docs/** whenever you add, remove, or edit files in `docs/`. The button upserts by chunk ID, so re-running on unchanged docs is safe. If you previously ingested with character splitting from the CLI, delete `chroma_data/*` first so the old chunks are not mixed with the new ones.
-
-### Where the API key comes from
-
-The app looks for `OPENAI_API_KEY` in this order. The first one found wins.
-
-| Priority | Source | When to use |
-|----------|--------|-------------|
-| 1 | `st.secrets` (`.streamlit/secrets.toml` locally, or **Settings → Secrets** on Streamlit Community Cloud) | Deployed apps |
-| 2 | `.env` in the project root | Local development |
-| 3 | Sidebar password field | Quick one-off sessions with no config files |
-
-To use a local secrets file instead of `.env`:
-
-```bash
-cp .streamlit/secrets.toml.example .streamlit/secrets.toml
-# Edit .streamlit/secrets.toml and set OPENAI_API_KEY = "sk-..."
-```
-
-Both `.env` and `.streamlit/secrets.toml` are gitignored.
-
-### Deploy to Streamlit Community Cloud
-
-1. Push the repository to GitHub. `chroma_data/`, `.env`, and `.streamlit/secrets.toml` are gitignored and will not be uploaded.
-2. Go to [share.streamlit.io](https://share.streamlit.io), click **New app**, and select the repo and branch.
-3. Set **Main file path** to `streamlit_app.py`.
-4. Under **Advanced settings → Secrets**, add:
-   ```toml
-   OPENAI_API_KEY = "sk-..."
-   ```
-5. Deploy. Once the app loads, click **Rebuild index from docs/** in the sidebar to build the vector store on the server.
-
-The index lives on the app's ephemeral disk, so you will need to rebuild it after the app restarts or redeploys.
-
-### Troubleshooting
-
-| Symptom | Fix |
-|---------|-----|
-| `No index found` in the sidebar | Click **Rebuild index from docs/**. |
-| `Set an OpenAI API key in the sidebar before asking.` | Add `OPENAI_API_KEY` to `.env`, to `.streamlit/secrets.toml`, or paste it in the sidebar. |
-| Error mentioning `invalid_api_key` or `401` | The key being sent is wrong or expired. Check the `OPENAI_API_KEY` line in `.env`, or the Secrets panel on Streamlit Cloud. |
-| `Ingestion failed: No .md files found in ./docs` | Add at least one `.md` file to `docs/`. |
-| First question is slow | The embedding model and ChromaDB collection load once and are cached with `st.cache_resource`. Later questions are fast. |
-
----
-
 ## Demo — Character vs Semantic Chunking
 
-This is the core demo. Run the steps below in order to see exactly how chunking strategy affects RAG answer quality. Use `python` or `python3` depending on your install.
+This is the core demo. Run the steps below in order to see exactly how chunking strategy affects RAG answer quality, then test the final index in the Streamlit UI (Step 6). Use `python` or `python3` depending on your install.
 
 ---
 
@@ -189,6 +107,73 @@ python demo/user_query.py "What Python code do I need to connect an agent to the
 **What to observe:**
 - The retrieved chunks will be complete sections — the MCPToolset setup code, the StreamableHTTPConnectionParams block — intact and in context.
 - The answer will include the actual Python code snippet and a precise citation like `[Source: DOCUMENTATION.md, Section: Modern Approach: MCP_Maps_Agent]`.
+
+---
+
+### Step 6 — Test the Same Index in the Streamlit UI
+
+The web UI runs the exact same LangGraph pipeline as `demo/user_query.py`, but over the semantic index you just built in Step 4. Use it to re-ask the Step 5 question and inspect the retrieved chunks and hybrid-search trace visually.
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Streamlit prints a local URL (usually `http://localhost:8501`) and opens it in your browser.
+
+**Walk-through:**
+
+1. **Check the sidebar status.** It should show `API key loaded from .env` and an **Indexed chunks** count matching the ~18–22 chunks from Step 4. If it shows `No index found`, click **Rebuild index from docs/** — that button runs the same structure-based ingest as Step 4.
+2. **Ask the Step 5 question.** Type *"What Python code do I need to connect an agent to the Maps MCP server?"* into **Your question** and press **Ask**, or click one of the example questions under **Try asking** in the sidebar.
+3. **Compare the output to the CLI.** The page shows:
+   - **Answer** — the grounded response from `gpt-4o-mini`.
+   - **Citations** — the `[Source: file, Section: name]` references extracted from the answer.
+   - **Retrieved chunks** (expander) — the top-K chunks after Reciprocal Rank Fusion, with rank, document, section title, RRF score, and full text. These should be complete sections, matching what you saw in Step 5.
+   - **Hybrid search trace** (expander) — the BM25, vector, and RRF ranking output, so you can see exactly why each chunk was chosen.
+4. **Run the non-hallucination test in the UI.** Click *"What is the rate limit on the Stripe API?"* under **Try asking**. The assistant should say it could not find an answer in the documentation rather than inventing one.
+
+**Optional — see the character-split index in the UI too.** If you want to compare both strategies in the browser, run Steps 1–3 again, then in the UI ask the same question and note the fragmented chunks in the **Retrieved chunks** expander. Don't use **Rebuild index from docs/** for this; that button always uses semantic chunking.
+
+**API key resolution.** The app looks for `OPENAI_API_KEY` in this order, and the first one found wins:
+
+| Priority | Source | When to use |
+|----------|--------|-------------|
+| 1 | `st.secrets` (`.streamlit/secrets.toml` locally, or **Settings → Secrets** on Streamlit Community Cloud) | Deployed apps |
+| 2 | `.env` in the project root | Local development |
+| 3 | Sidebar password field (held in memory for the session only, never written to disk) | Quick one-off sessions |
+
+To use a local secrets file instead of `.env`:
+
+```bash
+cp .streamlit/secrets.toml.example .streamlit/secrets.toml
+# Edit .streamlit/secrets.toml and set OPENAI_API_KEY = "sk-..."
+```
+
+Both `.env` and `.streamlit/secrets.toml` are gitignored.
+
+**Troubleshooting:**
+
+| Symptom | Fix |
+|---------|-----|
+| `No index found` in the sidebar | Run Step 4, or click **Rebuild index from docs/**. |
+| `Set an OpenAI API key in the sidebar before asking.` | Add `OPENAI_API_KEY` to `.env`, to `.streamlit/secrets.toml`, or paste it in the sidebar. |
+| Error mentioning `invalid_api_key` or `401` | The key being sent is wrong or expired. Check the `OPENAI_API_KEY` line in `.env`, or the Secrets panel on Streamlit Cloud. |
+| `Ingestion failed: No .md files found in ./docs` | Add at least one `.md` file to `docs/`. |
+| First question is slow | The embedding model and ChromaDB collection load once and are cached with `st.cache_resource`. Later questions are fast. |
+
+---
+
+### Optional — Deploy the UI to Streamlit Community Cloud
+
+1. Push the repository to GitHub. `chroma_data/`, `.env`, and `.streamlit/secrets.toml` are gitignored and will not be uploaded.
+2. Go to [share.streamlit.io](https://share.streamlit.io), click **New app**, and select the repo and branch.
+3. Set **Main file path** to `streamlit_app.py`.
+4. Under **Advanced settings → Secrets**, add:
+   ```toml
+   OPENAI_API_KEY = "sk-..."
+   ```
+5. Deploy. Once the app loads, click **Rebuild index from docs/** in the sidebar to build the vector store on the server.
+
+The index lives on the app's ephemeral disk, so you will need to rebuild it after the app restarts or redeploys.
 
 ---
 
