@@ -28,3 +28,6 @@ env/
 .vscode/
 .idea/
 *.log
+
+# ---- Local-only notes -------------------------------------------------------
+requirements.md
