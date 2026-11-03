@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://025c7163-673c-41a2-bc8c-5ee49ad0e72b.frame.claudeusercontent.com/_f/1793583795-f29a/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.Cf8le2NF.js","assets":"assets.DG69nuOE.js","comments":"comments.BnsN5UXJ.js","db":"db.CCPy_cYa.js","desktop":"desktop.DuQm2Hig.js","dictation":"dictation.C9bJoIZV.js","downloads":"downloads.BLg1QCW0.js","embed":"embed.SWCZLzn6.js","endpoints":"endpoints.Cgd32w2P.js","files":"files.BWjhUR2a.js","mcp":"mcp.RT0IhfK0.js","network":"network.B5UA9Su4.js","paste":"paste.BXT-6GsY.js","permissions":"permissions.YN66judO.js","reads":"reads.Ch7Jwxh7.js","room":"room.DcZfm17Q.js","sample":"sample.DwGzO02I.js","self":"artifact.Cf8le2NF.js","tts":"tts.DT7xqCtz.js","user":"user.DWCNmu2k.js"},"transforms":"_transforms.DNGDzUsT.js","comments":"_comments._RoG4m2E.js","translate":"_translate.C5JgnwQl.js","ldx":"_ldx.CwGHU7dr.js"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </script><script>(function(){"use strict";function pr(t){return t==="cookie"||t==="query"?t:void 0}function mr(t){return typeof t=="number"&&Number.isSafeInteger(t)&&t>0?t:void 0}var so=3e5;function vr(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var _r=["light","dark","system"],yr=/^[A-Za-z0-9_-]{1,64}$/,Ot=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,gr=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function wr(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||gr.has(e)}var Mt="data-ldx-props";function br(t,e){if(e.toLowerCase()===Mt)return!0;const r=t.getAttribute(Mt);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var io="http://www.w3.org/1999/xhtml",Er="http://www.w3.org/2000/svg",Sr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),kr=new Set(["script","style"]);function Ar(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!Sr.has(e):t.namespaceURI===Er?!kr.has(e):!1}function at(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function Rr(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&at(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&at(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function Tr(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:l,s:u}=Rr(n,e);l===a&&u===0&&a===s||r.replaceData(l,a-l-u,e.slice(l,s-u));const k=r.data,E=t.ownerDocument.getSelection?.()??null,m=E!==null&&E.rangeCount>0&&(E.anchorNode===r||E.focusNode===r)?{anchor:E.anchorNode,anchorOffset:E.anchorOffset,focus:E.focusNode,focusOffset:E.focusOffset}:null;let p=-1,A=-1;for(let y=0;y<k.length&&y<e.length;y++){const O=k.charCodeAt(y),R=e.charCodeAt(y);O!==R&&at(O,R)&&(p<0&&(p=y),A=y)}const M=p>=0;if(M&&r.replaceData(p,A-p+1,e.slice(p,A+1)),M&&m!==null&&m.anchor!==null&&m.focus!==null)try{E.setBaseAndExtent(m.anchor,m.anchorOffset,m.focus,m.focusOffset)}catch{}}var Lr=new Set(["html","head","body","frameset"]);function Or(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&Lr.has(t.localName)}function Mr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!yr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!Ot.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!Ot.test(r))return!1}return!0}function Pr(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function Nr(t){return t===null||typeof t!="object"?!1:Pr(t.__frame_patch,Mr)}function Cr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function Fr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Ir(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function jr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&_r.includes(r)}var xr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Dr=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function Hr(t){return typeof t=="string"&&Dr.includes(t)?t:"other"}var Br=Object.freeze({until:null,now:!1}),qr="__claude_hot",Ur="__claude_hot_in",Kr=/^__claude_hot(?:_in)?(?::|$)/,Pt=/^[0-9a-z]{1,32}$/,st=t=>t===void 0?qr:"__claude_hot:"+t,Pe=t=>t===void 0?Ur:"__claude_hot_in:"+t;function $r(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&Kr.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function zr(t){let e=null;try{e=q(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!Pt.test(e.k)?null:ve(e.g)?{k:e.k,g:e.g}:{k:e.k}}var lo=262144,Gr=3e3,Wr=5e3,Nt=/^[a-z0-9._:-]{1,64}$/,Vr=["none","hot-restart","hard-reload"],Xr=["asset","doc","added","removed"],Yr=1500,Jr=/^[0-9a-f]{64}$/;function q(t){return t!==null&&typeof t=="object"?t:null}function ve(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Ct(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function Zr(t){return t===void 0||typeof t=="string"&&Nt.test(t)}function Ft(t){const e=q(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function it(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Ct(e.seq)&&typeof e.handoff=="string"&&xr.includes(e.handoff)&&Zr(e.note)}function It(t){const e=q(t);return e!==null&&ve(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||it(e.from))}function Qr(t){const e=q(t);return e!==null&&e.kv===1&&ve(e.gen)&&it(e.from)&&Object.hasOwn(e,"data")}function en(t){const e=q(t);return e!==null&&e.__frame_hot_snapshot===!0&&ve(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Ft(e.deadline))&&Ct(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function tn(t){const e=q(t);return e!==null&&e.__frame_hot_start===!0&&ve(e.gen)&&it(e.from)}function rn(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function jt(t){return q(t)!==null&&!Array.isArray(t)}function nn(t){const e=q(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&rn(e.ver)&&(e.grant===void 0||jt(e.grant))&&(e.budgets===void 0||jt(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||ve(e.brokerGen))}function on(t){const e=q(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||ve(e.brokerGen))}function We(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function xt(t){if(t==null||typeof t=="string")return!0;const e=q(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function an(t){const e=q(t);return e!==null&&typeof e.path=="string"&&Xr.includes(e.kind)&&xt(e.from)&&xt(e.to)}function sn(t){return t===null?null:Object.freeze(t.filter(an))}function ln(t){const e=q(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&We(e.from)&&We(e.to)&&(e.changed===null||Array.isArray(e.changed))&&Vr.includes(e.required)&&Ft(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Jr.test(e.preflight))}function cn(t){const e=q(t);return e!==null&&e.__frame_hot_readdress===!0&&We(e.from)&&We(e.to)}var _e=/^[\w.-]+\.js$/;function un(t,e,r){return r?"inert":typeof e=="string"&&_e.test(e)?t?[e]:"inert":t?"inert":"framed"}var Dt=Object.freeze({[Symbol("claude.hot.restart")]:!0});function Ht(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=st(e?.k),a=Pe(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{$r(r,a)}catch{}let l=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const u=JSON.parse(s);Qr(u)&&(e===null||u.gen===e.g)&&(l=u)}catch{}if(l===null)try{r.removeItem(a)}catch{}return l}function Bt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var fn=/^[^/\\?#]{1,128}$/,lt=t=>fn.test(t)&&t!=="."&&t!=="..";function qt(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!lt(r))return null;const s=n.search.slice(1).split("&").filter(l=>!/^__frame_t(?:=|$)/.test(l)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var Ve="{}";function Ne(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Ut(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function Kt(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function dn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,l=queueMicrotask,u=performance.now.bind(performance),k=new TextEncoder;let E=null,m=null;try{E=history,m=E.replaceState.bind(E)}catch{}const p=(...o)=>{try{console.warn(...o)}catch{}};let A=Bt(),M=null;try{M=sessionStorage}catch{}const y={storage:M,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:A,priors:[],key:n?.k};let O=n?.k;const R=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(u()),16);let v=e?.data??{},B=Ne(e?.from),z=e?.gen??0,G=e!==null,J=!1,W=!1,H=null,T=!1;const D=new AbortController;let V=null,x=null,ne=null,ge=!1,se=()=>{};const X=new Promise(o=>{se=o});let we=!1,Qe=!1,Ae=!1,c,h=null,w=!1,P=!1,I=!1,U=!1,K=!1,oe=!1;const le=o=>{for(const f of[st(o),Pe(o)])try{M?.removeItem(f)}catch{}},$=(o,f)=>{try{f!==null&&r.post(o,f)}catch{}},be=()=>K||=I&&(x===null||U),ie=()=>{const o={__frame_hot:!0,ready:x!==null,accept:ne!==null,demand:!0};oe=!K,oe&&(o.booting=!0),we&&(o.readData=!0),Ae&&(o.threw=!0),h?.assess&&(o.preflight=!0),$(o,H)};let De=!1,He=!1,me=!1,Be=!1;const ce=()=>{De||!T||me||(De=!0,$({__frame_reveal_hold:!0},"*"))},Re=()=>new Promise(o=>{let f,d=0;const g=N=>{if(f===void 0)f=N;else if(N!==f||++d>=8){o();return}try{R(g)}catch{o()}};try{R(g)}catch{o()}}),qe=()=>{me=!0,$({__frame_reveal_ready:!0},"*")},Ue=o=>{He||(He=!0,o.then(f=>{if(f===!1)return;let d=null;try{d=h?.settle?.()??null}catch{}return(d===null?Re():new Promise(g=>{a(g,50),Promise.resolve(d).then(g,g)}).then(Re)).then(qe)}))},Ke=()=>{if(Be||!me)return;Be=!0;const o=()=>{try{h?.afterReveal?.()}catch{}};o(),Re().then(()=>{o(),qe()})},Ee=(o=!1)=>{if(ge||x===null||!G||!W)return;ge=!0;const f=x,d=v;l(()=>{let g;try{g=f(d)}catch(C){throw se(!1),C}let N=!1;try{N=typeof g?.then=="function"}catch{}if(!N){se(!0);return}Promise.resolve(g).then(()=>se(!0),C=>{se(!1),l(()=>{throw C})})}),Ue(o?X:r.dcl.then(()=>X))},Se=o=>typeof o=="string"&&Nt.test(o)?o:void 0,$e=o=>{const f={__frame_hot_restart:!0},d=Se(o?.note);d!==void 0&&(f.note=d),o?.required==="hard-reload"&&(f.required="hard-reload"),$(f,H)},et=Object.freeze({get data(){return W||(Qe=!0),!G&&!we&&(we=!0,W&&ie()),v},get from(){return B},get gen(){return z},signal:D.signal,snapshot(o){typeof o=="function"&&(V=o)},ready(o){typeof o!="function"||x!==null||(x=o,ce(),ie(),J&&$({__frame_hot_ready:!0,gen:z},H),Ee())},accept(o){typeof o=="function"&&(ne=o,ie())},restart(o){const f={note:o?.note,required:o?.required};if(W){$e(f);return}const d=c;c={note:Se(d?.note)??f.note,required:d?.required==="hard-reload"||f.required==="hard-reload"?"hard-reload":void 0}}});let ae=null,Te=()=>{};const tt=new Promise(o=>{Te=o});let Et=null;const ze=()=>Et??=r.dcl.then(()=>{let o=!1;try{o=ae!==null&&ae.expect()}catch{}if(!o)return;const f=ae.maxMs;return new Promise(d=>{tt.then(d),a(d,f)})}),Ge=()=>{if(!w||P||h===null)return;P=!0;const o=h;ze().then(()=>{try{me||o.afterStart(Kt(e),!1)}catch{}})},i=o=>{e!==null&&Qe&&(we=!0),v={},B=null,z=0;try{M?.removeItem(Pe(n?.k))}catch{}e!==null&&!o&&Ue(r.dcl.then(()=>x!==null?X:void 0))},_=()=>{w=!0,Ue(ze().then(()=>x!==null?X:void 0)),Ge()};try{addEventListener("error",()=>{Ae||x!==null||(Ae=!0,ie())})}catch{}const b=()=>{a(()=>{!K&&be()&&oe&&ie()},0)};try{I=document.readyState==="complete",I||addEventListener("load",()=>{I=!0,b()},{once:!0})}catch{I=!0}be(),X.then(()=>{U=!0,b()});let S=-1,te,Y,Z=!0,St=!1,kt,rt=null;const At=o=>{const f=rt===null;rt=Z&&o[0]!=="withheld"?o:["withheld",o[1],Ve];let d=o[0];if(Z&&d!=="withheld"){const N={ver:A,handoff:d};te!==void 0&&(N.seq=te),Y!==void 0&&(N.note=Y);try{if(M===null)throw new Error("no storage");M.setItem(st(O),'{"kv":1,"gen":'+S+',"from":'+JSON.stringify(N)+(kt!==void 0?',"k":'+JSON.stringify(kt):"")+',"data":'+(d==="ok"?o[2]:Ve)+"}")}catch{d="unavailable"}}else{d="withheld",le(O);try{h?.release?.()}catch{}}const g={__frame_hot_snapshotted:!0,gen:S,handoff:d,bytes:o[1]};o[3]!==void 0&&(g.errName=o[3]),$(g,H),f&&(d==="snapshot_error"||d==="unclonable"||d==="oversize")&&p("claude.hot: snapshot",d,o[3])},Le=o=>{try{return Hr(o?.name)}catch{return"other"}},Oe=(o,f,d=0)=>At(f===void 0?[o,d,Ve]:[o,d,Ve,Le(f)]),Jn=o=>{if(o.gen<=S)return;const f=S>=0;if(S=o.gen,te=o.seq,Y=Se(o.note),typeof o.key=="string"&&Pt.test(o.key)&&o.key!==O&&(le(O),O=o.key),Z&&=o.handoff!==!1,f){rt!==null?At(rt):St&&$({__frame_hot_held:!0,gen:S},H);return}D.abort();const d=Object.freeze({handoff:Z,timeoutMs:o.timeoutMs,deadline:o.deadline??Br}),g=V,N=()=>{if(Z)try{kt=h?.capture()}catch{}if(g===null){Oe("empty");return}let L=!1;const Q=a(()=>{L||(L=!0,Oe("snapshot_timeout"))},Math.max(0,d.timeoutMs));Promise.resolve().then(()=>g(d)).then(Me=>{if(L)return;L=!0,s(Q);let ue;try{ue=JSON.stringify(Me)}catch(Rt){Oe("unclonable",Rt);return}if(typeof ue!="string"){Oe("unclonable");return}let fe=ue.length;try{fe=k.encode(ue).length}catch{}if(fe>262144){Oe("oversize",void 0,fe);return}At(["ok",fe,ue])},Me=>{L||(L=!0,s(Q),Oe("snapshot_error",Me))})};let C=null;try{C=h?.holdForIme()??null}catch{}if(C===null)N();else{St=!0,$({__frame_hot_held:!0,gen:S},H);const L=()=>{St=!1,N()};C.then(L,L)}},Zn=o=>{if(!J||G||x===null||o.gen!==z)return;let f=null;try{f=Ht(M,n&&{k:n.k,g:o.gen})}catch{}if(f!==null&&f.gen!==o.gen){f=null;try{M?.removeItem(Pe(n?.k))}catch{}}v=f?.data??{},B=Ut(Ne(f?.from??o.from),Ne(o.from)),f!==null&&(z=f.gen),G=!0,J=!1;const d=Kt(f);X.then(g=>{try{g&&h?.afterStart(d,!0)}catch{}}),Ee(!0)},ur=o=>{const f=A,d=y.entry;let g="",N,C=null;try{if(g=location.href,N=E.state,C=qt(g,f,o),C!==null)if(m(N,"",C),location.pathname.startsWith("/_f/"+o+"/"))C=location.href;else return{failed:"navigate event canceled"}}catch(L){return{failed:Le(L)}}A=y.ver=o,y.priors.push(f)>8&&y.priors.splice(1,1);try{y.entry=qt(d,f,o)??d}catch{}return[C,f,d,g,N]},Qn=({from:o,to:f})=>{let d,g;if(!lt(f.ver))d="adopt_failed",g="not a version path segment";else if(f.ver===A)d="adopted";else if(!A||o.ver!==A)d="stale";else{const C=ur(f.ver);"failed"in C?(d="adopt_failed",g=C.failed):d=C[0]===null?"adopt_skipped":"adopted"}g!==void 0&&p(`claude.hot: could not move this page's URL to its new version folder /_f/${f.ver}/ (${g})`);const N={__frame_hot_readdressed:!0,to:f.ver,at:A,outcome:d};$(N,H)};let nt=0;const eo=o=>{const f=ne;if(f===null||o.id<=nt)return;nt=o.id;const d=h?.assess;if(o.preflight===void 0||d===void 0){fr(o,f);return}let g=!1;const N=Q=>{g||(g=!0,s(L),o.id===nt&&fr(o,f,Q))},C=()=>N(d.timeout(o)),L=a(C,Yr+100);d.run(o,window).then(N,C)},fr=(o,f,d)=>{let g,N=!1,C=!1,L,Q,Me=null;const ue=j=>{if(C)return!1;if(L!==void 0&&L!==j)return p(`claude.hot: u.${j}() ignored - u.${L}() was called first`),!1;const de=L===void 0;return L=j,de},fe=j=>{L="restart",p(`claude.hot: ${j} - restarting`)},Rt=()=>{if(!ue("adopt")||o.id!==nt)return;const j=o.to.ver;if(ot.required!=="none"){fe(`u.adopt() needs required 'none', it is '${ot.required}'`);return}if(!lt(j)){fe("u.adopt() cannot address this version");return}if(!A||j===A)return;const de=ur(j);if("failed"in de){Q="adopt_failed",fe(`adopt_failed ${de.failed}; URL not changed`);return}const[re,Lt,no,hr,oo]=de;re===null?(Q="adopt_skipped",p(`claude.hot: adopt_skipped - page already left /_f/${Lt}/; URL not changed, update still applied`)):Q="adopted",Me=()=>{if(A===j){if(re!==null)try{if(location.href!==re)p("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(m(oo,"",hr),location.href!==hr){p("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}Q="adopt_reverted",p("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(ao){p(`claude.hot: adopt_revert_failed ${Le(ao)} - URL still at the new version`);return}A=y.ver=Lt,y.entry=no,y.priors[y.priors.length-1]===Lt&&y.priors.pop(),re===null&&(Q=void 0)}}},ot=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:sn(o.changed),required:o.required,deadline:o.deadline,adopt:Rt,defer(){return ue("defer")&&ot.deadline.now&&fe("u.defer() past the deadline"),Dt},restart(j){return ue("restart"),L==="restart"&&!C&&(g??=Se(j?.note),N||=j?.required==="hard-reload"),Dt},...d?.update}),to=(j,de)=>{C=!0,j==="threw"?(Me?.(),g??=Le(de).toLowerCase()):L===void 0&&p(j==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const re={__frame_hot_verdict:!0,id:o.id};re.verdict=j==="threw"||L===void 0||L==="restart"?"restart":L==="adopt"?"applied":"deferred",re.verdict==="restart"&&(N&&(re.required="hard-reload"),g!==void 0&&(re.note=g)),Q!==void 0&&(re.verdict==="applied"||Q!=="adopted")&&(re.adopt=Q),$(Object.assign(re,d?.verdict),H)};let dr=!1;const Tt=(j,de)=>dr?!1:(dr=!0,s(ro),to(j,de),!0),ro=a(()=>Tt("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>f(ot)).then(()=>Tt("settled"),j=>{!Tt("threw",j)&&L==="adopt"&&$e({note:Le(j).toLowerCase()}),p("claude.hot: accept",Le(j))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:et,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:et,boot:y,afterConnect(){T=!0,(e!==null||x!==null)&&ce()},onInit(o,f){H=f,W=!0;const d=It(o)?o:null;d?.phase==="final"&&e!==null&&e.gen===d.gen?(G=!0,B=Ut(B,Ne(d.from)),_()):(J=d?.phase==="pending",i(J),G=!J,z=d?.gen??0,B=Ne(d?.from)),ie(),oe&&a(()=>{K||(K=!0,ie())},Wr),J&&x!==null&&$({__frame_hot_ready:!0,gen:z},f),c!==void 0&&($e(c),c=void 0),Ee()},onNoInit(){W=!0,i(!1),G=!0,Ee()},onShell(o){return o?.__frame_revealed===!0?(Ke(),!1):en(o)?(Jn(o),!0):tn(o)?(Zn(o),!0):ln(o)?(eo(o),!0):cn(o)?(Qn(o),!0):!1},attachExtras(o){h=o,Ge(),o.assess&&ie()},inSlot:()=>Pe(O),hydration(o,f){ae??={expect:o,maxMs:f}},hydrated(){Te()},carried(){return G?v:{}},presented:()=>me}}var co="frame_ldx_runtime",hn="frame_ldx_build",uo="script#an-form",pn=256;function ct(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=pn&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function Ce(t,e,r,n){try{const a=t[e];if(typeof a!="function")return;t[e]=function(...s){if(n){let u;try{u=n(this)}catch{}if(u!==void 0)return u}const l=a.apply(this,s);try{r?.(this)}catch{}return l}}catch{}}var mn=()=>{},ut;function vn(){if(ut)return ut;const t={media:new Set,contexts:new Set,wakeLocks:new Set,gate:null,refuse:null,onStart:null,onStop:null};ut=t;const e=l=>t.gate?.(l),r=l=>{t.onStop?.(l)},n=window.HTMLMediaElement?.prototype;n&&(Ce(n,"play",l=>{ct(t.media,l,u=>u.paused),t.onStart?.(l)},e),Ce(n,"pause",r));const a=window.AudioContext,s=window.AudioNode?.prototype;a&&s&&(Ce(s,"connect",l=>{const u=l.context;u instanceof a&&(ct(t.contexts,u,k=>k.state==="closed"),t.onStart?.(u))}),Ce(a.prototype,"resume",void 0,e),Ce(a.prototype,"suspend",r));try{const l=window.WakeLock?.prototype,u=l?.request;l&&typeof u=="function"&&(l.request=function(...k){if(t.refuse)return t.refuse();const E=u.apply(this,k);return Promise.resolve(E).then(m=>{ct(t.wakeLocks,m,p=>p.released),t.onStart?.(m)},mn),E})}catch{}return t}function _n(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function yn(){let t=null;const e=()=>t??parent,r=n=>t?n===t:_n(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let l=0;l<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));l++)s=s.parent},on(n){const a=s=>{const l=s.source;r(l)&&n(s.data,s.origin,s.isTrusted,()=>{t??=l})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const l=u=>{r(u.source)&&u.origin===n&&a(u.data,u)};return addEventListener("message",l,s),()=>removeEventListener("message",l,s)}})}}function gn(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var wn=500,bn=2e4,En="data-token-reads",Sn="data-frame-refused-watch",kn="data-frame-unsupported",An=/(?:^|\s)stylesheet(?:\s|$)/i;function Rn(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&An.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function Tn(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(Sn,"");const a=location.href,s=fetch,l=setTimeout,u={method:"HEAD",cache:"no-store",credentials:"same-origin"},k=y=>y.ok||y.status===304;let E=!1,m=!1;const p=()=>removeEventListener("error",M,!0),A=async y=>{const O=await s(y,u);if(k(O))m=!0;else if(O.status===403){const R=await s(a,u);if(k(R)){const v=(await s(y,u)).status;v===403?(m=!0,document.documentElement.setAttribute(kn,""),r()):v<500&&(m=!0)}else R.status>=400&&R.status<500&&(m=!0)}},M=y=>{if(m||E)return;if(document.documentElement.hasAttribute(En)){m=!0,p();return}const O=Rn(y.target,n);O&&(E=!0,l(()=>{A(O).catch(()=>{}).finally(()=>{E=!1,m&&p()})},wn))};addEventListener("error",M,!0),addEventListener("load",p,{once:!0}),l(p,bn)}var $t="__frame_scroll",zt="__frame_scroll_framed",Ln=150,On=310,Mn=160,Pn=3e4,Gt="p,h1,h2,h3,h4,h5,h6,li,pre,blockquote,tr,dt,dd,figcaption,summary",Wt=()=>innerWidth<=On&&innerHeight<=Mn,Vt=t=>{const e=document.createTreeWalker(t,NodeFilter.SHOW_TEXT);let r="";for(;r.length<600&&e.nextNode();)r+=e.currentNode.nodeValue.slice(0,600-r.length);const n=r.replace(/\s+/g," ").trim().slice(0,120);let a=2166136261;for(let s=0;s<n.length;s++)a=Math.imul(a^n.charCodeAt(s),16777619);return n.length>11?a>>>0||1:0},Xt=t=>{for(let e=t;e&&e!==document.scrollingElement;e=e.parentElement){const r=getComputedStyle(e).position;if(r==="fixed"||r==="sticky"||e!==t&&e.scrollTop)return!1}return!0},Nn=()=>{const t=[],e=[];try{for(let r=0;r<16;r++){const n=document.elementFromPoint(innerWidth/(r%2?4:2),innerHeight*(r>>1)/8+1);let a=n?.closest(Gt)??n;for(;a&&!a.matches(Gt)&&![...a.childNodes].some(l=>l.nodeType===3&&l.nodeValue?.trim());)a=a.parentElement;const s=a&&!e.includes(a)?Vt(a):0;s&&!t.some(l=>l[0]===s&&l[2]===a.tagName)&&Xt(a)&&(e.push(a),t.push([s,Math.round(a.getBoundingClientRect().top),a.tagName]))}}catch{}return t.sort((r,n)=>+(r[1]<0)-+(n[1]<0)),t.length?t.slice(0,3):void 0},Cn=t=>{try{for(const[e,r,n]of t.a??[]){const a=document.getElementsByTagName(n);let s;for(let u=0;u<a.length&&a.length<5e3;u++)Vt(a[u])===e&&(s=s===void 0||s?.contains(a[u])?a[u]:null);const l=s?.getBoundingClientRect();if(l?.height&&s.checkVisibility?.()!==!1&&Xt(s)&&isFinite(r))return Math.max(0,Math.round(scrollY+l.top-r))}}catch{}return t.y};function Fn(){try{const t=location.ancestorOrigins;return t&&(origin==="null"||t[0]!==origin)?{frame:null}:{frame:frameElement??null,nested:t&&t[1]===origin}}catch{return{frame:null}}}function In(){const{frame:t,nested:e}=Fn(),r=t!==null,n=()=>{try{return t.inert===!0||(e??!!t?.ownerDocument.defaultView?.frameElement)}catch{return!0}};let a;const s=()=>{if(a===void 0)try{a=location.pathname.replace(/^\/_f\/[^/]{1,128}\//,"")}catch{a=null}return a};let l=0,u=!1,k=!1,E=!1,m={y:0},p=null;const A=T=>{try{if(!r){sessionStorage.setItem($t,JSON.stringify(T));return}const D=s();D!==null&&!n()&&sessionStorage.setItem(zt,JSON.stringify({...T,p:D}))}catch{}},M=T=>{if(clearTimeout(l),p===null)return;const D=p;p=null,A({y:D,a:T&&D>0?Nn():void 0})},y=()=>{if(u){u=!1;return}k=!0,p=scrollY,clearTimeout(l),l=setTimeout(M,Ln,!0)};try{addEventListener("scroll",y,{passive:!0}),addEventListener("pagehide",()=>M())}catch{}const O=()=>{if(r&&n())return null;const T=r?zt:$t;let D;try{D=sessionStorage.getItem(T)}catch{return null}if(D===null)return null;let V;try{V=JSON.parse(D)}catch{V=null}const{y:x,a:ne,p:ge}=V??{};if(!(typeof x=="number"&&Number.isFinite(x)&&x>=0)){try{sessionStorage.removeItem(T)}catch{}return null}if(r&&ge!==s())return null;const se=X=>Array.isArray(X)&&typeof X[0]=="number"&&Number.isFinite(X[1])&&typeof X[2]=="string";return{y:x,a:Array.isArray(ne)&&ne.length<4&&ne.every(se)?ne:void 0}};let R=!1,v=-1;const B=T=>{try{const D=scrollY,V=Cn(T);scrollTo({top:V,left:0,behavior:"instant"}),m=Wt()?T:{y:V,a:T.a},E=!0,clearTimeout(l),p=null,A(m),v=scrollY,v!==D&&(u=!0);const x=V!==T.y&&document.readyState!=="complete";(v!==V||x)&&!R&&(R=!0,addEventListener("load",()=>{try{scrollY===v&&B(O()??m)}catch{}},{once:!0}))}catch{}},z=()=>{try{return!!location.hash}catch{return!0}};let G=!1;const J=()=>{try{if(G||!Wt())return;G=!0;const T=Date.now(),D=()=>{try{removeEventListener("resize",D)}catch{}Date.now()-T>Pn||k||z()||B(O()??m)};addEventListener("resize",D)}catch{}};let W=!1,H=!1;return{restore(){if(W)return;if(W=!0,r&&O()===null){A({y:0});return}if(z())return;const T=O();T!==null&&(B(T),J())},promoted(){if(H||(H=!0,z()))return;const T=O();T!==null?(B(T),J()):E&&B(m)}}}function jn(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:k=>k})??null}catch{}const s=window.Worker,l=s?.prototype,u=Object.freeze({Worker:s,workerOn:l?.addEventListener,workerPost:l?.postMessage,workerTerminate:l?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(k=>k?.bootTopLevel?k.bootTopLevel(u,n):n.settle()).catch(()=>n.settle())}var fo="modulepreload",ho=function(t){return"/"+t},po={},xn=function(e,r,n){let a=Promise.resolve();function s(l){const u=new Event("vite:preloadError",{cancelable:!0});if(u.payload=l,window.dispatchEvent(u),!u.defaultPrevented)throw l}return a.then(l=>{for(const u of l||[])u.status==="rejected"&&s(u.reason);return e().catch(s)})},Dn=window===top,Yt=Object.getOwnPropertyDescriptor(window,"claude"),Xe=un(Dn,window.__FRAME_PREAMBLE?.topLevel,Yt?.writable===!1),ft=typeof Xe=="object"&&Xe[0],F=ft?gn():yn();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&Xe==="framed")try{F.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Jt=1e4,Hn=2e3,dt=2e3,ht=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]),Bn="https://*.";function Zt(t){for(const e of ht)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(e.startsWith(Bn)){if(qn(e.slice(10),t))return!0}else if(t===e)return!0;return!1}function qn(t,e){if(!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(t))return!1;let r;try{r=new URL(e)}catch{return!1}if(r.protocol!=="https:"||r.port!==""||r.origin!==e)return!1;const n=r.hostname;if(!n.endsWith(`.${t}`))return!1;const a=n.slice(0,n.length-t.length-1);return/^[a-z0-9-]+$/.test(a)}var Fe=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Ie=window.__FRAME_PREAMBLE?.transforms,pt=window.__FRAME_PREAMBLE?.comments,mt=window.__FRAME_PREAMBLE?.translate,ye=window.__FRAME_PREAMBLE?.ldx,Ye=pr(window.__FRAME_PREAMBLE?.cred),Qt=(()=>{try{const[t]=performance.getEntriesByType("navigation"),e=t?.serverTiming?.find(r=>r.name==="frame-cred-exp");return e!==void 0&&/^\d{1,15}$/.test(e.description)?mr(Number(e.description)):void 0}catch{return}})();function er(t){return xn(()=>import("/_runtime/"+t),void 0)}var je=new Set,tr=setTimeout,Un=fetch,Kn=AbortController,$n=800+800*Math.random(),zn=3e3,Je=null,rr=new Map;function Gn(t,e){let r=rr.get(t);return r||rr.set(t,r=Wn(t,e)),r}function Wn(t,e){if(Je?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new Kn;let n=!1;return tr(()=>{n=!0,r.abort()},zn),Un("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":Je?.has(t)?"csp":"net")}function he(t){if(!Je){const e=Je=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return er(t).catch(()=>new Promise(e=>tr(e,$n)).then(()=>er(t+"?r=1")).then(e=>(e!==void 0&&je.add(t),e)))}function nr(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:bt,hooks:Ze,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(l){return Promise.reject(l)}}})}}var ke=null,ee=null;function or(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var vt=!1,Ze={editBefore:null,edit:null};function Vn(t,e,r=!1){const n=[];let a;if(r)try{Ze.editBefore?.(t)}catch{}for(const s of t.elements){const l=document.querySelector(`[data-id="${s.target}"]`);if(!l){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(u=>!wr(u)||br(l,u))){a=s.target;break}if(s.text!==void 0&&(!Ar(l)||Or(l))){a=s.target;break}for(const[u,k]of Object.entries(s.attrsSet??{}))if(!sr(l,u)){try{l.setAttribute(u,k)}catch{}ar(l,u,k)}for(const u of s.attrsRemoved??[])sr(l,u)||(l.removeAttribute(u),ar(l,u,null));typeof s.text=="string"&&Tr(l,s.text),n.push(s.target)}if(r)try{Ze.edit?.(t.seq,n,a)}catch{}if(a!==void 0){F.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function ar(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function sr(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function ir(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,vt=!0):vt&&(delete e.dataset.theme,e.style.colorScheme="",vt=!1)}var pe=new Map,lr=(t,e)=>Array.isArray(t)&&t.includes(e),_t=null;function yt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function xe(t,e){t.nulled=!0,t.ver=e,t.r(null)}function gt(t,e){for(const[r,n]of pe)n.done||(e&&n.asked?e(r,n):xe(n,t))}function Xn(){for(const t of pe.values())if(t.asked&&!t.done)return!0;return!1}var Yn=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),wt=!1,bt=(t,e)=>{let r=pe.get(t);if(r?.nulled&&wt)r=yt(),pe.set(t,r);else if(!r||r.done){r?.nulled&&ee&&F.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},ee);return}const n=typeof e=="function"?Object.setPrototypeOf(e,Yn):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function cr(){const t=Yt?.value??{};or(window,"claude",t);for(const e of Object.keys(Fe)){if(t[e]!==void 0){or(t,e,t[e]);continue}pe.set(e,yt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Fe,r))return Promise.resolve(null);let n=pe.get(r);return n?(_t&&(n.nulled||n.want!==void 0)&&(n=_t(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(Xe==="framed"){let t;const e=Ie&&_e.test(Ie)?he(Ie).catch(c=>{t={f:Ie,e:c}}):Promise.resolve(void 0),r=c=>{if(c.type==="auxclick"&&c.button!==1)return;const h=c.target,w=h&&h.closest?h.closest("a[href],area[href]"):null;if(!w)return;const P=w.getAttribute("href");if(!P)return;let I;try{I=new URL(P,document.baseURI)}catch{return}if((I.protocol==="http:"||I.protocol==="https:")&&I.origin!==location.origin){c.preventDefault();const U=(w.getAttribute("target")??"").toLowerCase(),K=c.type==="auxclick"||c.metaKey||c.ctrlKey||c.shiftKey||c.altKey||!["","_self","_top","_parent"].includes(U);F.post({__frame_nav:!0,url:I.href,newTab:K},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=c=>{c.isTrusted&&(n.pointer=!0)},s=c=>{c.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const l={cb:null};addEventListener("keydown",c=>l.cb?.(c),!0);const u={cb:null};addEventListener("keydown",c=>u.cb?.(c));const k=vn();e.then(c=>c?.installEscapeForward?.(l,h=>{ee&&F.post(h,ee)})),e.then(c=>{try{c?.installFocusKeep?.()}catch{}}),e.then(c=>{if(!c?.wireNav)return;const h=F.port("*");c.wireNav(h),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),c.wireEngagement?.(n,h,k)});let E=null;try{E=In()}catch{}const m=document.readyState==="loading"?new Promise(c=>document.addEventListener("DOMContentLoaded",()=>c(),{once:!0})):Promise.resolve();let p="dcl",A=!1;m.then(()=>{A=!0});let M=null,y=null;try{y=zr(window.name),M=Ht(null,y)}catch{}const O=cr();let R=null;try{R=dn(O,M,{post:(c,h)=>F.post(c,h),dcl:m},y)}catch{}e.then(c=>{try{R&&c?.installHotExtras?.(R)}catch{}});let v=null;const B=()=>lr(v?.flags,"frame_ldx_runtime")&&!!ye&&_e.test(ye)&&document.querySelector("script#an-form")!==null;try{R?.hydration(B,Gr)}catch{}let z=null,G=0;const J=F.on((c,h,w,P)=>{Zt(h)&&Cr(c)&&(P(),v=c.__frame_init,ee=h,J(),clearTimeout(G),z?.())});if(Ye){const c=Qt===void 0?{__frame_cred:Ye}:{__frame_cred:Ye,exp:Qt};for(const h of ht)try{h.includes("*")||F.post(c,h)}catch{}}F.post({__frame_connect:!0},"*");try{R?.afterConnect()}catch{}const W=setTimeout,H=clearTimeout,T=()=>new Promise(c=>W(c,0));let D=()=>NaN,V=()=>[];try{D=performance.now.bind(performance),V=performance.getEntriesByType.bind(performance)}catch{}let x=0;const ne=()=>{try{F.post({__frame_alive:!0},"*")}catch{}x=W(ne,Hn)},ge=()=>H(x);ne(),addEventListener("load",ge,{once:!0});const se=new Promise(c=>{z=c,G=setTimeout(()=>{J(),c()},Jt)}),X=new WeakSet;addEventListener("error",c=>{c.target&&X.add(c.target)},!0);try{Tn(Bt(),Ye,()=>{e.then(c=>{try{c?.drawRefusedNotice?.()}catch{}})})}catch{}const we=()=>{let c=[];try{c=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(w=>!w.sheet&&!w.disabled&&!X.has(w)&&w.getAttribute("href")&&URL.canParse(w.href)&&(!w.media||matchMedia(w.media).matches))}catch{}let h=c.length;return h===0?Promise.resolve():new Promise(w=>{try{const P=dt-D();P>0&&(p="sheets");const I=W(w,P>0?P<dt?P:dt:0),U=()=>{--h===0&&(H(I),w())};for(const K of c)K.addEventListener("load",U,{once:!0}),K.addEventListener("error",U,{once:!0})}catch{w()}})};m.then(()=>{try{E?.restore()}catch{}});const Qe=Promise.all([se,m,e]).then(c=>{if(v?.hostOverlays!==!0||!ee)return;const h=c[2],w=U=>{try{return U?.()===!0}catch{return!1}},P={cover:w(h?.declaresCover),...v.hostSides===!0&&{sides:w(h?.declaresSides)},...h?.answerLayoutCheck&&{checks:!0}};if(F.post({__frame_layout:P},ee),v.hostBackground!==!0)return;const I=ee;return T().then(we).then(()=>{try{h?.watchBackground?.(U=>F.post({__frame_layout:{...P,background:U}},I))}catch{}})}),Ae={cb:null};F.on((c,h)=>{if(Zt(h)&&Fr(c)){try{E?.promoted()}catch{}Ae.cb?.()}}),se.then(async()=>{if(!v||!ee){gt();try{R?.onNoInit()}catch{}return}if(ir(v.theme),v.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,k)),v.hostKeys!==void 0){const i=ee,_=v.hostKeys;e.then(b=>b?.installHostKeyForward?.(u,_,S=>F.post(S,i)))}try{R?.onInit(v.hot,ee)}catch{}let c;const h=()=>{try{!c&&ye&&B()&&(c=he(ye),c.then(i=>i?.prefetch?.()).catch(()=>{}))}catch{}};h(),m.then(h);const w=ee,P=F.port(w),I=(i,_)=>F.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:_}},w),U=(i,_,b)=>{new Promise(S=>S(Gn(_,b))).then(S=>I(i,S),()=>I(i))},K=i=>F.post({__frame_cap_recovered:{cap:i}},w);let oe=v.brokerGen;const le=()=>R?.boot.ver??"",$=le(),be=(i,_)=>{const b=le();H(_.t),_.sent=!0,_.want=b,_.t=W(()=>{_.done||(_.sent=!1,xe(_,b))},Jt),F.post({__frame_cap_want:!0,cap:i,ver:b},w)},ie=(i,_)=>{const b=pe.get(i.cap),S=Fe[i.cap];if(!_||!b||b.done||b.want!==i.ver||!_e.test(S))return;if(H(b.t),b.want=void 0,oe=i.brokerGen??oe,i.ver!==le()){be(i.cap,b);return}if(!i.grant||i.cap==="network"){xe(b,i.ver);return}const te=ke,Y=ke={...te,capabilities:{...te.capabilities,[i.cap]:i.grant},capBudgets:{...te.capBudgets,[i.cap]:{...te.capBudgets[i.cap],...i.budgets}}};he(S).then(Z=>{je.has(S)&&K(i.cap),Y.brokerGen=oe,wt=!0;try{Z?.install?.(Y)}catch{I(i.cap,"install")}finally{wt=!1}},Z=>U(i.cap,S,Z)).then(()=>{b.done||xe(b,i.ver)})};let De=!1,He=!1;F.on((i,_,b)=>{if(_!==w)return;try{if(R?.onShell(i))return}catch{}if(jr(i)&&ir(i.__frame_theme.theme),nn(i)&&ie(i,b),b&&on(i)&&(oe=i.brokerGen??oe),Ir(i)){const Y=i.__frame_host_visible.visible;e.then(Z=>Z?.applyHostVisible?.(Y,k))}i?.__frame_layout_check&&e.then(Y=>Y?.answerLayoutCheck?.(i,Z=>F.post({__frame_layout_verdict:Z},w))),Nr(i)&&Vn(i.__frame_patch,w,b);const S=i?.__fc_mode;S&&typeof S=="object"&&!De&&pt&&_e.test(pt)&&(De=!0,he(pt).then(Y=>Y.install?.(w,S.on===!0,P)).catch(()=>{}));const te=i?.__ft_cmd;te&&typeof te=="object"&&!He&&mt&&_e.test(mt)&&(He=!0,he(mt).then(Y=>Y.install?.(w,te,P)).catch(()=>{}))});const me=Object.keys(v.capabilities??{}),Be=me.filter(i=>Object.hasOwn(Fe,i)).map(i=>[i,Fe[i]]).filter(i=>typeof i[1]=="string"&&_e.test(i[1])),ce=w;let Re=!1,qe=()=>{};const Ue=new Promise(i=>{qe=()=>{Re=!0,i()}}),Ke=()=>(Re||(p="caps"),Ue),Ee=M!==null||It(v.hot)||v.hostVisible===!1||v.hostOverlays===!0;A&&(p="init");const Se=v.hostBackground===!0,$e=m.then(()=>(Se&&Ke(),Se?Qe:void 0)).then(()=>Ee?Ke():T()).then(we).then(()=>{let i=!0;try{i=Ee||Xn()}catch{}return i?Ke():void 0}).then(()=>{ge();const i=vr(V,D);F.post(i?{__frame_ready:!0,nav:i,gate:p}:{__frame_ready:!0,gate:p},ce),e.then(_=>{_?.installSizeReporter?.(ce,Ae,P),_?.installPaintReporter?.(P)})}),et=await Promise.allSettled(Be.map(([,i])=>he(i))),ae=await e;if(ae?.buildBoot||(t?U("_transforms",t.f,t.e):I("_transforms")),ae?.buildBoot)try{ke=ae.buildBoot(v,ae.TRANSFORMS??{},{shellOrigin:ce,mount:bt,hooks:Ze,shell:P},i=>F.post({__frame_cap_telemetry:i},ce))}catch{I("_transforms","install"),ke=nr(v,ce,P)}else ke=nr(v,ce,P);ae?.buildBoot&&je.has(Ie??"")&&K("_transforms");const Te=ke;Te.brokerGen=oe;try{ae?.installAnchorMirror?.(P)}catch{}et.forEach((i,_)=>{const[b,S]=Be[_];if(i.status!=="fulfilled"){U(b,S,i.reason);return}je.has(S)&&K(b);try{i.value?.install?.(Te)}catch{I(b,"install")}});const tt=v.capWants===!0,Et=v.usable,ze=i=>!!le()&&lr(Et,i)&&!me.includes(i);tt&&(_t=(i,_)=>{const b=le();if(!b)return _;if(!_.nulled)return _.want!==b&&be(i,_),_;if(b===_.ver&&(_.sent||!ze(i)))return _;const S=yt();return pe.set(i,S),be(i,S),S}),gt($,tt?(i,_)=>le()!==$||ze(i)?be(i,_):xe(_,$):void 0),qe(),await $e;let Ge=!1;try{Ge=B()}catch{}ye&&Ge?(c??he(ye)).then(i=>i?.boot?.({shellOrigin:w,build:Te.flags.has(hn),hot:R?.hot??null,carried:R?.carried(),presented:()=>R?.presented()??!0})).catch(()=>!1).then(i=>{R?.hydrated(),i!==!0?I("_ldx"):je.has(ye)&&K("_ldx")}):R?.hydrated()})}else ft&&(cr(),jn(ft,ht,he,{settle:gt,mount:bt}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>RAG Hybrid Search Architecture</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="./css2">
+<style>
+/* Layout: one wide schematic (two lanes: ingestion above, query below), then a short walkthrough and a file map */
+:root {
+  --bg: #f5f7f8;
+  --surface: #ffffff;
+  --ink: #17232b;
+  --muted: #5a6a74;
+  --line: #c9d3d9;
+  --ingest: #b56a10;
+  --ingest-tint: #fbf1e3;
+  --query: #0f6f8a;
+  --query-tint: #e6f2f5;
+  --external: #6a4fb0;
+  --external-tint: #efebf8;
+  --danger: #b4372e;
+  --display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11181d; --surface: #18222a; --ink: #e3eaee; --muted: #93a3ad; --line: #34434d;
+    --ingest: #e5a24f; --ingest-tint: #2a2117; --query: #4fb6d1; --query-tint: #142a31;
+    --external: #a993e6; --external-tint: #231e33; --danger: #ef7b70;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11181d; --surface: #18222a; --ink: #e3eaee; --muted: #93a3ad; --line: #34434d;
+  --ingest: #e5a24f; --ingest-tint: #2a2117; --query: #4fb6d1; --query-tint: #142a31;
+  --external: #a993e6; --external-tint: #231e33; --danger: #ef7b70;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 40px;
+}
+header { display: grid; gap: 8px; max-width: 68ch; }
+.eyebrow {
+  font: 600 12px/1 var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+h1 {
+  font: 600 clamp(28px, 4vw, 40px)/1.1 var(--display);
+  margin: 0;
+  text-wrap: balance;
+}
+h2 {
+  font: 600 22px/1.2 var(--display);
+  margin: 0;
+  text-wrap: balance;
+}
+header p { margin: 0; color: var(--muted); }
+code { font-family: var(--mono); font-size: .9em; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.sw { width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid; }
+.sw.i { background: var(--ingest-tint); border-color: var(--ingest); }
+.sw.q { background: var(--query-tint); border-color: var(--query); }
+.sw.x { background: var(--external-tint); border-color: var(--external); }
+.sw.e { border: 0; width: 22px; height: 0; border-top: 2px dashed var(--danger); border-radius: 0; }
+
+.diagram {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow-x: auto;
+  padding: 12px;
+}
+.diagram svg { display: block; width: 100%; min-width: 1040px; height: auto; }
+
+/* SVG styling */
+.lane-i { fill: var(--ingest-tint); }
+.lane-q { fill: var(--query-tint); }
+.lane-label { font: 600 12px var(--mono); letter-spacing: .08em; }
+.lane-label.i { fill: var(--ingest); }
+.lane-label.q { fill: var(--query); }
+.lane-sub { font: 400 12px var(--sans); fill: var(--muted); }
+.box { fill: var(--surface); stroke: var(--line); stroke-width: 1.2; }
+.box.i { stroke: var(--ingest); }
+.box.q { stroke: var(--query); }
+.box.x { fill: var(--external-tint); stroke: var(--external); }
+.box.panel { fill: var(--bg); stroke: var(--line); stroke-dasharray: 3 3; }
+.box.graph { fill: none; stroke: var(--query); stroke-dasharray: 6 4; stroke-width: 1.4; }
+.pill { fill: var(--ink); }
+.pill-t { font: 600 11px var(--mono); fill: var(--surface); }
+.t { font: 600 14px var(--mono); fill: var(--ink); }
+.t.x { fill: var(--external); }
+.s { font: 400 12px var(--sans); fill: var(--muted); }
+.m { font: 400 11px var(--mono); fill: var(--muted); }
+.tag { font: 600 10px var(--mono); letter-spacing: .06em; fill: var(--external); }
+.gt { font: 600 13px var(--sans); fill: var(--query); }
+.edge { fill: none; stroke-width: 1.6; }
+.edge.i { stroke: var(--ingest); }
+.edge.q { stroke: var(--query); }
+.edge.x { stroke: var(--external); }
+.edge.err { stroke: var(--danger); stroke-dasharray: 5 4; }
+.edge.dot { stroke: var(--muted); stroke-dasharray: 2 3; stroke-width: 1.2; }
+.el { font: 400 11px var(--mono); fill: var(--muted); }
+.el.err { fill: var(--danger); }
+.ah-i { fill: var(--ingest); }
+.ah-q { fill: var(--query); }
+.ah-x { fill: var(--external); }
+.ah-err { fill: var(--danger); }
+
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 40px; }
+.cols > section { min-width: 0; display: grid; gap: 16px; align-content: start; }
+ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 14px; }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: 28px 1fr; gap: 12px; max-width: 68ch; }
+ol.steps li::before {
+  content: counter(s);
+  font: 600 12px/26px var(--mono);
+  text-align: center;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid var(--query);
+  color: var(--query);
+}
+ol.steps b { font-weight: 600; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { font: 600 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+td:first-child { font-family: var(--mono); font-size: 13px; white-space: nowrap; }
+td .k { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 8px; vertical-align: middle; }
+.k.i { background: var(--ingest); } .k.q { background: var(--query); } .k.x { background: var(--external); }
+
+.note { font-size: 14px; color: var(--muted); max-width: 68ch; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">RAG_Hybrid_Search · system map</div>
+    <h1>RAG Hybrid Search Architecture</h1>
+    <p>Two flows share one ChromaDB index. Ingestion turns the Markdown files in <code>docs/</code> into embedded chunks. The query flow runs a LangGraph pipeline that finds chunks with keyword and vector search, merges the rankings, and asks <code>gpt-4o-mini</code> for a cited answer.</p>
+  </header>
+
+  <div class="legend" aria-label="Legend">
+    <span><i class="sw i"></i>Ingestion</span>
+    <span><i class="sw q"></i>Query pipeline</span>
+    <span><i class="sw x"></i>External service</span>
+    <span><i class="sw e"></i>Error path</span>
+  </div>
+
+  <div class="diagram">
+    <svg viewBox="0 0 1240 790" role="img" aria-labelledby="dg-title">
+      <title id="dg-title">Architecture: ingestion lane writes chunks to ChromaDB; query lane runs Streamlit into a LangGraph pipeline of retrieve, build prompt and generate nodes, with hybrid BM25 and vector search fused by RRF, and OpenAI for generation.</title>
+      <defs>
+        <marker id="a-i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-i" d="M0,0 L10,5 L0,10 z"></path></marker>
+        <marker id="a-q" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-q" d="M0,0 L10,5 L0,10 z"></path></marker>
+        <marker id="a-x" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-x" d="M0,0 L10,5 L0,10 z"></path></marker>
+        <marker id="a-err" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-err" d="M0,0 L10,5 L0,10 z"></path></marker>
+      </defs>
+
+      <!-- ============ INGESTION LANE ============ -->
+      <rect class="lane-i" x="8" y="8" width="1224" height="232" rx="8"></rect>
+      <text class="lane-label i" x="24" y="38">INGESTION · BUILDS THE INDEX</text>
+      <text class="lane-sub" x="24" y="58">Runs from the sidebar's "Rebuild index from docs/" button or python demo/ingest_structure_based.py</text>
+
+      <rect class="box i" x="24" y="100" width="200" height="88" rx="6"></rect>
+      <text class="t" x="40" y="128">docs/*.md</text>
+      <text class="s" x="40" y="150">MCP_Documentation.md</text>
+      <text class="s" x="40" y="168">DOCUMENTATION.md</text>
+
+      <rect class="box i" x="284" y="100" width="230" height="88" rx="6"></rect>
+      <text class="t" x="300" y="128">split_by_headers()</text>
+      <text class="s" x="300" y="150">Cuts at ## headers; splits again</text>
+      <text class="s" x="300" y="168">at ### if a section is over 400 words</text>
+
+      <rect class="box i" x="574" y="100" width="220" height="88" rx="6"></rect>
+      <text class="t" x="590" y="128">embed_chunks()</text>
+      <text class="s" x="590" y="150">all-MiniLM-L6-v2</text>
+      <text class="s" x="590" y="168">one 384-dim vector per chunk</text>
+
+      <path class="edge i" d="M224,144 H282" marker-end="url(#a-i)"></path>
+      <path class="edge i" d="M514,144 H572" marker-end="url(#a-i)"></path>
+      <path class="edge i" d="M794,144 H978" marker-end="url(#a-i)"></path>
+      <text class="el" x="836" y="136">upsert_chunks()</text>
+
+      <!-- ChromaDB (shared store) -->
+      <rect class="box" x="980" y="84" width="220" height="128" rx="6" style="stroke: var(--ink); stroke-width: 1.4"></rect>
+      <path d="M980,104 H1200" class="edge dot"></path>
+      <text class="m" x="996" y="98">SHARED STORE</text>
+      <text class="t" x="996" y="128">ChromaDB</text>
+      <text class="s" x="996" y="150">chroma_data/ · rag_docs</text>
+      <text class="s" x="996" y="168">chunk text, vector and</text>
+      <text class="s" x="996" y="186">doc_title / section_title</text>
+      <text class="m" x="996" y="204">39 chunks indexed</text>
+
+      <!-- ============ QUERY LANE ============ -->
+      <rect class="lane-q" x="8" y="256" width="1224" height="526" rx="8"></rect>
+      <text class="lane-label q" x="24" y="286">QUERY · RUNS FOR EVERY QUESTION</text>
+
+      <rect class="box q" x="24" y="310" width="210" height="64" rx="6"></rect>
+      <text class="t" x="40" y="336">You (browser)</text>
+      <text class="s" x="40" y="357">localhost:8501</text>
+
+      <path class="edge q" d="M129,376 V418" marker-start="url(#a-q)" marker-end="url(#a-q)"></path>
+
+      <rect class="box q" x="24" y="420" width="210" height="200" rx="6"></rect>
+      <text class="t" x="40" y="448">streamlit_app.py</text>
+      <text class="s" x="40" y="474">Index status, Rebuild button</text>
+      <text class="s" x="40" y="494">Key: secrets → .env → sidebar</text>
+      <text class="s" x="40" y="514">Caches model, Chroma, graph</text>
+      <text class="s" x="40" y="534">Captures the search trace</text>
+      <text class="s" x="40" y="562">Shows answer, citations,</text>
+      <text class="s" x="40" y="582">retrieved chunks, trace</text>
+
+      <!-- invoke + return -->
+      <path class="edge q" d="M234,430 H282" marker-end="url(#a-q)"></path>
+      <text class="el" x="238" y="422">query</text>
+      <path class="edge q" d="M264,600 H236" marker-end="url(#a-q)"></path>
+      <text class="el" x="238" y="592">state</text>
+
+      <!-- LangGraph container -->
+      <rect class="box graph" x="264" y="306" width="680" height="456" rx="10"></rect>
+      <text class="gt" x="284" y="332">LangGraph StateGraph</text>
+      <text class="m" x="284" y="350">pipeline/graph.py · state: RAGState {query, retrieved_chunks, prompt, answer, error}</text>
+
+      <rect class="box q" x="284" y="392" width="180" height="76" rx="6"></rect>
+      <text class="t" x="298" y="418">retrieve_node</text>
+      <text class="s" x="298" y="440">Hybrid search over the</text>
+      <text class="s" x="298" y="457">index, keeps top 5 chunks</text>
+
+      <rect class="box q" x="504" y="392" width="180" height="76" rx="6"></rect>
+      <text class="t" x="518" y="418">build_prompt_node</text>
+      <text class="s" x="518" y="440">Grounding rules, chunks</text>
+      <text class="s" x="518" y="457">with sources, the question</text>
+
+      <rect class="box q" x="724" y="392" width="140" height="76" rx="6"></rect>
+      <text class="t" x="738" y="418">generate_node</text>
+      <text class="s" x="738" y="440">Calls the LLM,</text>
+      <text class="s" x="738" y="457">pulls out citations</text>
+
+      <rect class="pill" x="888" y="414" width="46" height="32" rx="16"></rect>
+      <text class="pill-t" x="899" y="434">END</text>
+
+      <path class="edge q" d="M464,430 H502" marker-end="url(#a-q)"></path>
+      <path class="edge q" d="M684,430 H722" marker-end="url(#a-q)"></path>
+      <path class="edge q" d="M864,430 H886" marker-end="url(#a-q)"></path>
+
+      <!-- conditional error edge -->
+      <path class="edge err" d="M374,392 V374 H911 V412" marker-end="url(#a-err)"></path>
+      <text class="el err" x="560" y="368">state.error set → skip to END</text>
+
+      <!-- generate ↔ OpenAI -->
+      <path class="edge x" d="M794,470 V520 H978" marker-start="url(#a-x)" marker-end="url(#a-x)"></path>
+      <text class="el" x="810" y="512">chat.completions</text>
+
+      <rect class="box x" x="980" y="482" width="220" height="76" rx="6"></rect>
+      <text class="tag" x="996" y="500">EXTERNAL</text>
+      <text class="t x" x="996" y="522">OpenAI API</text>
+      <text class="s" x="996" y="544">gpt-4o-mini · max 1024 tokens</text>
+
+      <!-- hybrid search detail -->
+      <path class="edge dot" d="M374,468 V500"></path>
+      <rect class="box panel" x="284" y="500" width="400" height="240" rx="8"></rect>
+      <text class="m" x="300" y="522">retrieval/hybrid_search.py</text>
+
+      <rect class="box q" x="300" y="536" width="180" height="84" rx="6"></rect>
+      <text class="t" x="314" y="560">BM25 keyword</text>
+      <text class="s" x="314" y="582">BM25Okapi over all chunks</text>
+      <text class="s" x="314" y="600">finds exact names</text>
+
+      <rect class="box q" x="490" y="536" width="180" height="84" rx="6"></rect>
+      <text class="t" x="504" y="560">Vector search</text>
+      <text class="s" x="504" y="582">query embedded with MiniLM</text>
+      <text class="s" x="504" y="600">top 10 by meaning</text>
+
+      <rect class="box q" x="300" y="646" width="370" height="78" rx="6"></rect>
+      <text class="t" x="314" y="670">Reciprocal Rank Fusion</text>
+      <text class="m" x="314" y="691">score = 1/(rank_bm25+60) + 1/(rank_vec+60)</text>
+      <text class="s" x="314" y="711">keeps the 5 best → retrieved_chunks</text>
+
+      <path class="edge q" d="M390,620 V644" marker-end="url(#a-q)"></path>
+      <path class="edge q" d="M580,620 V644" marker-end="url(#a-q)"></path>
+
+      <!-- Chroma → hybrid search -->
+      <path class="edge i" d="M1218,212 V578 H686" marker-end="url(#a-i)"></path>
+      <path class="edge i" d="M1200,190 H1218"></path>
+      <text class="el" x="760" y="570">collection.get() + query()</text>
+    </svg>
+  </div>
+
+  <div class="cols">
+    <section>
+      <h2>What happens when you ask a question</h2>
+      <ol class="steps">
+        <li><span>You type a question in the Streamlit page. The app calls <code>graph.invoke()</code> with the query and an empty state.</span></li>
+        <li><span><b>retrieve_node</b> scores every chunk with BM25 and asks ChromaDB for the 10 nearest vectors. RRF merges the two rankings and keeps the top 5.</span></li>
+        <li><span>If retrieval fails (for example, no index yet), the graph sets <code>state.error</code> and jumps to END. The page shows the error.</span></li>
+        <li><span><b>build_prompt_node</b> writes a system prompt that says to answer only from the chunks, refuse if the answer isn't there, and cite <code>[Source: doc, Section: …]</code>.</span></li>
+        <li><span><b>generate_node</b> sends the prompt to <code>gpt-4o-mini</code> and pulls the citations out of the reply with a regex.</span></li>
+        <li><span>Streamlit shows the answer, the citations, the 5 retrieved chunks with their RRF scores, and the BM25/vector/RRF trace it captured from stdout.</span></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Where each part lives</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Path</th><th>Role</th></tr></thead>
+          <tbody>
+            <tr><td><span class="k q"></span>streamlit_app.py</td><td>Web UI, API-key lookup, cached model, collection and graph</td></tr>
+            <tr><td><span class="k q"></span>pipeline/</td><td>RAGState, the three nodes, and the graph wiring</td></tr>
+            <tr><td><span class="k q"></span>retrieval/</td><td>Hybrid search (BM25 + vector + RRF) and plain vector search</td></tr>
+            <tr><td><span class="k q"></span>generation/</td><td>Prompt builder and the OpenAI call</td></tr>
+            <tr><td><span class="k i"></span>chunking/</td><td>Header-based splitter, character splitter, comparison stats</td></tr>
+            <tr><td><span class="k i"></span>vectorstore/</td><td>Embedding model loader and ChromaDB read/write</td></tr>
+            <tr><td><span class="k i"></span>demo/</td><td>Command-line ingest and query scripts</td></tr>
+            <tr><td>config/settings.py</td><td>Paths, model name, 400-word limit, TOP_K = 5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">The embedding model runs locally, so only the final generation step calls an outside service. Streamlit swaps <code>retrieve_node</code>'s loaders for cached versions, so the model and collection load once per server run.</p>
+    </section>
+  </div>
+</div>
+
+</body></html>

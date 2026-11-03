@@ -4,9 +4,9 @@ Run a question through the full RAG pipeline:
 retrieve → build prompt → generate answer with citations.
 
 Usage:
-    python demo/03_query.py "How does FastMCP register a tool?"
-    python demo/03_query.py "What is the difference between Stdio and Streamable HTTP?"
-    python demo/03_query.py "What is the rate limit on the Stripe API?"
+    python3 demo/user_query.py "How does FastMCP register a tool?"
+    python3 demo/user_query.py "What is the difference between Stdio and Streamable HTTP?"
+    python3 demo/user_query.py "What is the rate limit on the Stripe API?"
 """
 import os
 import sys
@@ -17,7 +17,7 @@ from pipeline.graph import run_query
 
 def main() -> None:
     if len(sys.argv) < 2:
-        print('Usage: python demo/03_query.py "<your question>"')
+        print('Usage: python3 demo/user_query.py "<your question>"')
         sys.exit(1)
     main_with_query(sys.argv[1])
 
